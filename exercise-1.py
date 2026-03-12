@@ -6,3 +6,4 @@
 #       what the function returns, not what it prints.
 # ============================================================================
 
+print("Hello!")

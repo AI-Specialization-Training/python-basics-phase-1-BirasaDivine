@@ -6,9 +6,14 @@
 pythonnumbers = [45, 78, 12, 92, 33, 67]
 
 def find_smallest(numbers):
-    for num in pythonnumbers:
-        if(num[i]>num[i-1]):
-            biggestnum=num[i]
-        else :
-            biggestnum=num[i-1]
-            return biggestnum
+    smallest = numbers[0]       
+    for num in numbers:
+        if num < smallest:       
+            smallest = num       
+    return smallest             
+
+def linear_search(items, target):
+    for i in range(len(items)):
+        if items[i] == target:
+            return i             
+    return -1      
